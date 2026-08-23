@@ -37,3 +37,9 @@ No requiere instalacion de dependencias adicionales.
 ## Estado del proyecto
 
 En desarrollo - actividad colaborativa de practica con Git y GitHub (ramas, issues, pull requests y resolucion de conflictos).
+
+## Detalle de funcionalidades
+
+-Registro de actividades: formulario donde se ingresa nombre, descripcion, responsable y prioridad de cada actividad.
+-Listado de actividades: vista donde se muestran todas las actividades registradas, con su estado y prioridad diferenciados visualmente.
+-Gestion de estados: cada actividad puede marcarse como pendiente, en progreso o completada.
