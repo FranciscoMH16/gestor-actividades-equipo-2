@@ -6,6 +6,10 @@
 
 console.log("Gestor de Actividades cargado correctamente.");
 
+// Obtener el formulario
+
+const formulario = document.getElementById("formulario-actividad");
+
 formulario.addEventListener("submit", function(evento) {
     evento.preventDefault();
 
