@@ -107,3 +107,37 @@ footer {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     margin-bottom: 2rem;
 }
+
+#formulario-actividad {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+#formulario-actividad input,
+#formulario-actividad textarea,
+#formulario-actividad select {
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+#formulario-actividad textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+#formulario-actividad button {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#formulario-actividad button:hover {
+    background-color: #2980b9;
+}
