@@ -17,8 +17,38 @@
         <!-- Sección para el formulario -->
         <section class="card" id="seccion-formulario">
             <h2>Registrar Nueva Actividad</h2>
-            <div id="contenedor-formulario">
-                <!-- Formulario aqui -->
+            <!-- Formulario agregado-->
+             <div id="contenedor-formulario">
+                <form id="formulario-actividad">
+
+                    <label for="nombre">Nombre de la actividad:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    
+                    <label for="descripcion">Descripción:</label>
+                    <textarea id="descripcion" name="descripcion" required></textarea>
+                    
+                    <label for="responsable">Responsable:</label>
+                    <input type="text" id="responsable" name="responsable" required>
+                    
+                    <label for="prioridad">Prioridad:</label>
+                    <select id="prioridad" name="prioridad" required>
+                        <option value="">Seleccionar prioridad</option>
+                        <option value="Alta">Alta</option>
+                        <option value="Media">Media</option>
+                        <option value="Baja">Baja</option>
+                    </select>
+                    
+                    <label for="estado">Estado:</label>
+                    <select id="estado" name="estado" required>
+                        <option value="">Seleccionar estado</option>
+                        <option value="Pendiente">Pendiente</option>
+                        <option value="En progreso">En progreso</option>
+                        <option value="Completada">Completada</option>
+                    </select>
+                    
+                    <button type="submit">Registrar actividad</button>
+                
+                </form>
             </div>
         </section>
 
