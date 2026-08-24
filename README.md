@@ -44,22 +44,12 @@ En desarrollo - actividad colaborativa de practica con Git y GitHub (ramas, issu
 -Listado de actividades: vista donde se muestran todas las actividades registradas, con su estado y prioridad diferenciados visualmente.
 -Gestion de estados: cada actividad puede marcarse como pendiente, en progreso o completada.
 
+# Notas del proyecto
 
-# Pruebas realizadas
+Este proyecto fue desarrollado como actividad práctica de trabajo colaborativo usando Git y GitHub, con el objetivo de aplicar conceptos de control de versiones: ramas, commits, pull requests, code review y resolución de conflictos.
 
-Como parte de la validación del proyecto, se realizaron las siguientes pruebas manuales:
+## Convenciones de commits
 
-## Registro de actividades
--Se registraron 3 actividades de prueba con distintos nombres, responsables y prioridades.
--Se verificó que el formulario no permite guardar una actividad sin nombre o sin responsable.
-
-## Listado de actividades
--Se comprobó que las actividades registradas aparecen correctamente en el listado.
--Se verificó que el color de cada tarjeta cambia según la prioridad (alta, media, baja).
-
-## Gestión de estados
--Se probó cambiar el estado de una actividad entre pendiente, en progreso y completada.
--Se confirmó que el cambio de estado se refleja visualmente en el listado.
-
-## Resultado
-No se encontraron errores críticos. El registro, listado y gestión de estados funcionan según lo esperado.
+- Usar mensajes claros y descriptivos.
+- Cada commit debe reflejar un cambio concreto y significativo.
+- Evitar mensajes genéricos como "cambios" o "actualización".
