@@ -141,3 +141,8 @@ footer {
 #formulario-actividad button:hover {
     background-color: #2980b9;
 }
+
+/* Mejora visual del listado */
+tbody tr:nth-child(even) {
+    background-color: #e8f0fe;
+}

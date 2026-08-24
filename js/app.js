@@ -56,4 +56,41 @@ formulario.addEventListener("submit", function(evento) {
     console.log("Responsable:", responsable);
     console.log("Prioridad:", prioridad);
     console.log("Estado:", estado);
+
+// Agregar la actividad al listado
+const listado = document.querySelector("#contenedor-listado tbody");
+
+const fila = document.createElement("tr");
+
+fila.innerHTML = `
+    <td>${nombre}</td>
+    <td>${descripcion}</td>
+    <td>${responsable}</td>
+    <td>${prioridad}</td>
+    <td>${estado}</td>
+`;
+
+listado.appendChild(fila);
+
+// Ordenar actividades por prioridad: Alta → Media → Baja
+const ordenPrioridad = {
+    "Alta": 1,
+    "Media": 2,
+    "Baja": 3
+};
+
+const filas = Array.from(listado.querySelectorAll("tr"));
+
+filas.sort((a, b) => {
+    const prioridadA = a.children[3].textContent;
+    const prioridadB = b.children[3].textContent;
+
+    return ordenPrioridad[prioridadA] - ordenPrioridad[prioridadB];
+});
+
+filas.forEach(fila => listado.appendChild(fila));
+
+// Limpiar el formulario después de registrar la actividad
+formulario.reset();
+
 });
