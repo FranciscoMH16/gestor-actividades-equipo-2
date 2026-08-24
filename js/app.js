@@ -72,6 +72,24 @@ fila.innerHTML = `
 
 listado.appendChild(fila);
 
+// Ordenar actividades por prioridad: Alta → Media → Baja
+const ordenPrioridad = {
+    "Alta": 1,
+    "Media": 2,
+    "Baja": 3
+};
+
+const filas = Array.from(listado.querySelectorAll("tr"));
+
+filas.sort((a, b) => {
+    const prioridadA = a.children[3].textContent;
+    const prioridadB = b.children[3].textContent;
+
+    return ordenPrioridad[prioridadA] - ordenPrioridad[prioridadB];
+});
+
+filas.forEach(fila => listado.appendChild(fila));
+
 // Limpiar el formulario después de registrar la actividad
 formulario.reset();
 
